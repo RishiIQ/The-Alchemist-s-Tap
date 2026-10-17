@@ -1,0 +1,231 @@
+<div class="space-y-24">
+    <!-- SECTION 1: Editorial Hero with Relevant Background Image -->
+    <div class="relative rounded-3xl overflow-hidden editorial-card p-8 sm:p-16 bg-stone-900 text-white">
+        <div class="absolute inset-0 z-0 opacity-40">
+            <img src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=1200&auto=format&fit=crop&q=80" alt="Brewing Header Background" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/80 to-transparent z-10"></div>
+        <div class="relative z-20 max-w-2xl space-y-6 pt-6">
+            <div class="inline-flex items-center space-x-2 rtl:space-x-reverse px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-500/40 text-amber-400 text-xs font-bold tracking-widest uppercase backdrop-blur-md">
+                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                <span>Pacific Northwest Hop Harvest 2026</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white leading-[1.05] font-display">
+                Craft Masterpiece Beers <span class="text-amber-400">At Home.</span>
+            </h1>
+            <p class="text-sm sm:text-base text-stone-300 leading-relaxed">
+                Single-origin floor-malted barley, nitrogen-sealed aroma hops, and professional stainless brewing systems designed for uncompromising homebrewers.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+                <button onclick="switchTab('products')" class="px-8 py-4 rounded-2xl bg-amber-600 hover:bg-amber-700 text-white font-extrabold text-xs tracking-widest uppercase shadow-xl shadow-amber-600/30 transition-all flex items-center space-x-3 rtl:space-x-reverse group">
+                    <span>Explore Catalog</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 rtl:group-hover:-translate-x-1 transition-transform"></i>
+                </button>
+                <button onclick="switchTab('recipes')" class="px-8 py-4 rounded-2xl bg-stone-800 hover:bg-stone-700 text-stone-200 font-bold text-xs tracking-widest uppercase transition-all border border-stone-700">
+                    View Clone Recipes
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 2: Infinite Marquee Ticker -->
+    <div class="border-y border-stone-200 dark:border-stone-800 py-6 overflow-hidden bg-stone-100/50 dark:bg-stone-900/50">
+        <div class="animate-marquee whitespace-nowrap flex items-center space-x-12 rtl:space-x-reverse text-xs uppercase tracking-widest font-extrabold text-stone-600 dark:text-stone-300">
+            <span class="flex items-center space-x-3 rtl:space-x-reverse"><i data-lucide="beer" class="w-4 h-4 text-amber-600"></i><span>Single-Origin Floor Malts</span></span>
+            <span class="flex items-center space-x-3 rtl:space-x-reverse"><i data-lucide="wind" class="w-4 h-4 text-copper"></i><span>Cryo & Pellet Hops</span></span>
+            <span class="flex items-center space-x-3 rtl:space-x-reverse"><i data-lucide="flask-conical" class="w-4 h-4 text-emerald-600"></i><span>Pure Liquid Yeast Strains</span></span>
+            <span class="flex items-center space-x-3 rtl:space-x-reverse"><i data-lucide="shield-check" class="w-4 h-4 text-amber-600"></i><span>100% Viability Guarantee</span></span>
+        </div>
+    </div>
+
+    <!-- SECTION 3: Brand Pillars -->
+    <div class="space-y-8">
+        <div class="text-center max-w-xl mx-auto space-y-2">
+            <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Why The Alchemist's Tap</span>
+            <h2 class="text-3xl font-bold font-display text-espressoText dark:text-white">The Four Pillars of Great Brewing</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="editorial-card p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 flex items-center justify-center font-bold">01</div>
+                <h4 class="font-bold text-espressoText dark:text-white text-lg font-display">Precision Milling</h4>
+                <p class="text-mutedText dark:text-stone-400 text-xs leading-relaxed">Exact gap settings ensuring maximum starch conversion without husk tannin extraction.</p>
+            </div>
+            <div class="editorial-card p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 flex items-center justify-center font-bold">02</div>
+                <h4 class="font-bold text-espressoText dark:text-white text-lg font-display">Nitrogen Seal</h4>
+                <p class="text-mutedText dark:text-stone-400 text-xs leading-relaxed">Hops vacuum-sealed within 24 hours of harvest to preserve delicate alpha oils.</p>
+            </div>
+            <div class="editorial-card p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 flex items-center justify-center font-bold">03</div>
+                <h4 class="font-bold text-espressoText dark:text-white text-lg font-display">Cold-Chain Yeast</h4>
+                <p class="text-mutedText dark:text-stone-400 text-xs leading-relaxed">Weekly propagated pure liquid cultures shipped with thermal insulation.</p>
+            </div>
+            <div class="editorial-card p-6 rounded-3xl space-y-3">
+                <div class="w-12 h-12 rounded-2xl bg-amber-100 dark:bg-amber-950/60 text-amber-700 dark:text-amber-400 flex items-center justify-center font-bold">04</div>
+                <h4 class="font-bold text-espressoText dark:text-white text-lg font-display">Master Consultation</h4>
+                <p class="text-mutedText dark:text-stone-400 text-xs leading-relaxed">Direct support from certified brewmasters for custom recipe balancing.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 4: Interactive ABV Calculator -->
+    <div class="editorial-card p-8 sm:p-12 rounded-3xl grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-stone-900 text-white border-stone-800">
+        <div class="lg:col-span-6 space-y-4">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Interactive Brewing Tool</span>
+            <h3 class="text-3xl font-bold font-display">ABV & Gravity Calculator</h3>
+            <p class="text-stone-300 text-sm leading-relaxed">Estimate your finished craft beer alcohol by volume instantly by entering your Original Gravity (OG) and Final Gravity (FG).</p>
+            <div class="grid grid-cols-2 gap-4 pt-2">
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1">Original Gravity (OG)</label>
+                    <input type="number" id="calc-og" value="1.065" step="0.001" oninput="calculateABV()" class="w-full bg-stone-800 border border-stone-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500">
+                </div>
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-stone-400 mb-1">Final Gravity (FG)</label>
+                    <input type="number" id="calc-fg" value="1.012" step="0.001" oninput="calculateABV()" class="w-full bg-stone-800 border border-stone-700 rounded-xl px-4 py-3 text-white text-sm focus:outline-none focus:border-amber-500">
+                </div>
+            </div>
+        </div>
+        <div class="lg:col-span-6 bg-stone-800/80 p-8 rounded-2xl border border-stone-700 text-center space-y-3">
+            <span class="text-xs uppercase tracking-widest text-stone-400 font-bold">Estimated Alcohol By Volume</span>
+            <!-- Removed font-display to use normal system font -->
+            <div id="calc-result" class="text-6xl font-black text-amber-400">6.9%</div>
+            <p class="text-stone-400 text-xs">Calculated via standard attenuation formula.</p>
+        </div>
+    </div>
+
+    <!-- SECTION 5: Featured Grid -->
+    <div class="space-y-8">
+        <div class="flex items-end justify-between">
+            <div>
+                <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Top Sellers</span>
+                <h3 class="text-3xl font-bold font-display text-espressoText dark:text-white">Featured Inventories</h3>
+            </div>
+            <button onclick="switchTab('products')" class="text-amber-700 dark:text-amber-500 hover:text-amber-800 font-bold text-xs uppercase tracking-wider flex items-center space-x-1 rtl:space-x-reverse">
+                <span>View All</span>
+                <i data-lucide="arrow-right" class="w-4 h-4 rtl:rotate-180"></i>
+            </button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8" id="home-featured-grid"></div>
+    </div>
+
+    <!-- SECTION 6: Testimonials -->
+    <div class="space-y-8">
+        <div class="text-center max-w-xl mx-auto space-y-2">
+            <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Guild Reviews</span>
+            <h3 class="text-3xl font-bold font-display text-espressoText dark:text-white">Trusted by 32,000+ Homebrewers</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="editorial-card p-6 rounded-3xl space-y-4">
+                <div class="flex items-center text-amber-600 space-x-1 rtl:space-x-reverse">
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                </div>
+                <p class="text-stone-700 dark:text-stone-300 text-xs italic leading-relaxed">"The Maris Otter floor malt gave my English Brown Ale an incredible bready depth I couldn't get anywhere else."</p>
+                <div class="pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="w-9 h-9 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-400 font-bold flex items-center justify-center text-xs">JD</div>
+                    <div>
+                        <h5 class="font-bold text-espressoText dark:text-white text-xs">Jonathan Davis</h5>
+                        <p class="text-[10px] text-mutedText dark:text-stone-400">Seattle Homebrew Guild</p>
+                    </div>
+                </div>
+            </div>
+            <div class="editorial-card p-6 rounded-3xl space-y-4">
+                <div class="flex items-center text-amber-600 space-x-1 rtl:space-x-reverse">
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                </div>
+                <p class="text-stone-700 dark:text-stone-300 text-xs italic leading-relaxed">"Their liquid yeast arrived cold with ice packs intact. Fermentation started roaring within 8 hours of pitching."</p>
+                <div class="pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="w-9 h-9 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-400 font-bold flex items-center justify-center text-xs">SM</div>
+                    <div>
+                        <h5 class="font-bold text-espressoText dark:text-white text-xs">Sarah Miller</h5>
+                        <p class="text-[10px] text-mutedText dark:text-stone-400">Master Brewer, Portland</p>
+                    </div>
+                </div>
+            </div>
+            <div class="editorial-card p-6 rounded-3xl space-y-4">
+                <div class="flex items-center text-amber-600 space-x-1 rtl:space-x-reverse">
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                    <i data-lucide="star" class="w-4 h-4 fill-amber-500"></i>
+                </div>
+                <p class="text-stone-700 dark:text-stone-300 text-xs italic leading-relaxed">"The 5-gallon pro starter kit has everything you need. Solid stainless kettle and heavy glass carboy."</p>
+                <div class="pt-4 border-t border-stone-100 dark:border-stone-800 flex items-center space-x-3 rtl:space-x-reverse">
+                    <div class="w-9 h-9 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-400 font-bold flex items-center justify-center text-xs">RK</div>
+                    <div>
+                        <h5 class="font-bold text-espressoText dark:text-white text-xs">Robert Keller</h5>
+                        <p class="text-[10px] text-mutedText dark:text-stone-400">Certified Judge (BJCP)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 7: Seasonal Hop Spotlight Banner -->
+    <div class="editorial-card p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-amber-50 to-orange-50 dark:from-stone-900 dark:to-stone-800 border-amber-200 dark:border-stone-700 flex flex-col md:flex-row items-center justify-between gap-8">
+        <div class="space-y-4 max-w-xl">
+            <span class="px-3 py-1 rounded-full bg-amber-200/60 dark:bg-amber-950 text-amber-800 dark:text-amber-300 font-bold text-xs uppercase tracking-wider">Limited Harvest</span>
+            <h3 class="text-3xl sm:text-4xl font-bold font-display text-espressoText dark:text-white">Citra Cryo Hop Pellets (2026 Batch)</h3>
+            <p class="text-stone-700 dark:text-stone-300 text-xs sm:text-sm leading-relaxed">Concentrated lupulin glands providing intense grapefruit, passionfruit, and lime aromas with half vegetative matter.</p>
+            <button onclick="addToCart(3)" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-widest transition-all shadow-md">
+                Order 8oz Pack ($24.99)
+            </button>
+        </div>
+        <div class="w-full md:w-72 h-48 rounded-2xl overflow-hidden bg-white dark:bg-stone-900 shadow-md flex items-center justify-center">
+            <img src="https://images.unsplash.com/photo-1535958636474-b021ee887b13?w=800&auto=format&fit=crop&q=80" alt="Cryo Hops" class="w-full h-full object-cover">
+        </div>
+    </div>
+
+    <!-- SECTION 8: Guild FAQ Accordion -->
+<div class="max-w-3xl mx-auto space-y-6">
+    <div class="text-center space-y-2">
+        <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Got Questions?</span>
+        <h3 class="text-3xl font-bold font-display text-espressoText dark:text-white">Frequently Asked Brewing Questions</h3>
+    </div>
+    <div class="space-y-3">
+        <div class="editorial-card p-6 rounded-2xl space-y-2">
+            <button onclick="toggleFaq(this)" class="w-full text-start font-bold text-espressoText dark:text-white text-sm font-display flex items-center justify-between cursor-pointer">
+                <span>How is liquid yeast kept viable during shipping?</span>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-black transition-transform duration-300"></i>
+            </button>
+            <div id="faq-content-1" class="hidden pt-2 text-stone-600 dark:text-stone-400 text-xs leading-relaxed">
+                We package every liquid yeast vial inside thermal insulated bubble mailers with reusable non-toxic gel ice packs.
+            </div>
+        </div>
+        <div class="editorial-card p-6 rounded-2xl space-y-2">
+            <button onclick="toggleFaq(this)" class="w-full text-start font-bold text-espressoText dark:text-white text-sm font-display flex items-center justify-between cursor-pointer">
+                <span>Are the grains pre-crushed or whole?</span>
+                <i data-lucide="chevron-down" class="w-4 h-4 text-amber-700 transition-transform duration-300"></i>
+            </button>
+            <div id="faq-content-2" class="hidden pt-2 text-stone-600 dark:text-stone-400 text-xs leading-relaxed">
+                You can choose either option at checkout! We recommend freshly crushed right before shipping to maximize diastatic freshness.
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- SECTION 9: Community Guild Banner -->
+    <div class="editorial-card p-8 rounded-3xl text-center space-y-4 bg-stone-100 dark:bg-stone-900 border-stone-200 dark:border-stone-800">
+        <span class="text-xs uppercase tracking-widest text-amber-700 dark:text-amber-500 font-bold">Join the Guild</span>
+        <h3 class="text-2xl font-bold font-display text-espressoText dark:text-white">Share Your Brews with #TheAlchemistsTap</h3>
+        <p class="text-stone-600 dark:text-stone-400 text-xs max-w-md mx-auto">Tag us on Instagram and Twitter to feature your gold medal lagers and IPAs on our community gallery.</p>
+    </div>
+
+    <!-- SECTION 10: Home Newsletter Callout -->
+    <div class="editorial-card p-8 sm:p-12 rounded-3xl bg-amber-600 text-white border-amber-600 text-center space-y-6">
+        <span class="text-xs uppercase tracking-widest font-bold text-amber-200">The Alchemist's Gazette</span>
+        <h3 class="text-3xl font-bold font-display">Get Weekly Clone Recipes & Harvest Alerts</h3>
+        <form onsubmit="handleNewsletter(event)" class="max-w-md mx-auto flex items-center space-x-2 rtl:space-x-reverse">
+            <input type="email" required placeholder="Enter your email address..." class="bg-white text-stone-900 rounded-xl px-4 py-3 text-xs w-full focus:outline-none">
+            <button type="submit" class="bg-stone-900 hover:bg-stone-800 text-white px-6 py-3 rounded-xl text-xs font-bold uppercase shrink-0 transition-colors">Join</button>
+        </form>
+    </div>
+</div>

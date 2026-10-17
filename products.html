@@ -1,0 +1,97 @@
+<div class="space-y-16">
+    <!-- SECTION 1: Catalog Header -->
+    <div class="relative rounded-3xl overflow-hidden editorial-card p-8 sm:p-16 bg-stone-900 text-white">
+        <div class="absolute inset-0 z-0 opacity-90">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRgkSXTJ7CiBxMROrBTyOcRmoiMxkRXiPUb3aPyC03lEMkBgz9M1tCGNyg&s=10" alt="Malt & Ingredients Header" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/80 to-transparent z-10"></div>
+        <div class="relative z-20 max-w-2xl space-y-3 lg:py-24 md:py-20 sm:py-18">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Master Catalog</span>
+            <h1 class="text-4xl sm:text-5xl font-bold text-white">Professional Brewing Inventory</h1>
+            <p class="text-stone-300 text-sm">Explore our complete collection of floor-malted base grains, specialty hops, liquid yeast packets, and stainless steel hardware.</p>
+        </div>
+    </div>
+
+    <!-- SECTION 2: Category Filter Bar & Sorting -->
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 bg-white dark:bg-stone-900 p-4 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-sm">
+        <div class="flex flex-wrap justify-center sm:justify-start gap-2" id="product-filter-buttons">
+            <button onclick="filterProducts('all')" class="product-filter-btn px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all bg-amber-600 text-white shadow-md" data-filter="all">All Inventory</button>
+            <button onclick="filterProducts('kits')" class="product-filter-btn px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 border border-stone-200 dark:border-stone-700" data-filter="kits">Starter Kits</button>
+            <button onclick="filterProducts('malts')" class="product-filter-btn px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 border border-stone-200 dark:border-stone-700" data-filter="malts">Malts & Grains</button>
+            <button onclick="filterProducts('hops')" class="product-filter-btn px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 border border-stone-200 dark:border-stone-700" data-filter="hops">Hops & Yeast</button>
+            <button onclick="filterProducts('equipment')" class="product-filter-btn px-5 py-2.5 rounded-xl font-bold text-xs uppercase tracking-wider transition-all bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 border border-stone-200 dark:border-stone-700" data-filter="equipment">Equipment</button>
+        </div>
+        <div class="text-xs text-stone-500 dark:text-stone-400 font-bold px-2">
+            Showing Full Catalog Lineup
+        </div>
+    </div>
+
+    <!-- SECTION 3: Main Product Grid (Dynamic Injection Container) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="product-grid"></div>
+
+    <!-- SECTION 4: Expanded Long-Length Inventory Racks (Sub-Categories) -->
+    <div class="space-y-8 pt-6">
+        <div class="border-t border-stone-200 dark:border-stone-800 pt-12">
+            <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Extended Sourcing</span>
+            <h2 class="text-3xl font-bold text-espressoText dark:text-white mt-1">Specialty Adjuncts & Water Salts</h2>
+            <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Fine-tune mash conversion chemistry and head retention with laboratory-grade brewing minerals and adjunct packets.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
+                <div>
+                    <span class="text-[10px] font-bold text-amber-600 uppercase">Minerals</span>
+                    <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Brewers Gypsum (Calcium Sulfate) - 1kg</h4>
+                    <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Enhances hop crispness and bittering profile in pale ales.</p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
+                    <span class="font-extrabold text-amber-700 text-base">$8.99</span>
+                    <button onclick="addToCart(101)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
+                </div>
+            </div>
+            <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
+                <div>
+                    <span class="text-[10px] font-bold text-amber-600 uppercase">Minerals</span>
+                    <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Calcium Chloride Flakes - 1kg</h4>
+                    <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Softens water profiles to accentuate round malt sweetness.</p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
+                    <span class="font-extrabold text-amber-700 text-base">$9.49</span>
+                    <button onclick="addToCart(102)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
+                </div>
+            </div>
+            <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
+                <div>
+                    <span class="text-[10px] font-bold text-amber-600 uppercase">Clarifiers</span>
+                    <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Whirlfloc Tablet (Pack of 50)</h4>
+                    <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Irish moss extract for superior hot break precipitation and clear wort.</p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
+                    <span class="font-extrabold text-amber-700 text-base">$12.99</span>
+                    <button onclick="addToCart(103)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
+                </div>
+            </div>
+            <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
+                <div>
+                    <span class="text-[10px] font-bold text-amber-600 uppercase">Sanitizers</span>
+                    <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Star San Acid Sanitizer - 32oz</h4>
+                    <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">No-rinse foaming sanitizer for absolute contamination control.</p>
+                </div>
+                <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
+                    <span class="font-extrabold text-amber-700 text-base">$21.99</span>
+                    <button onclick="addToCart(104)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 5: Commercial Bulk Inquiry Banner -->
+    <div class="editorial-card p-8 sm:p-12 rounded-3xl bg-stone-900 text-white border-stone-800 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2 max-w-xl">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Wholesale & Club Orders</span>
+            <h3 class="text-2xl sm:text-3xl font-bold">Need Pallet-Scale Grain Sacks or Commercial Hop Contracts?</h3>
+            <p class="text-stone-300 text-xs leading-relaxed">Partner directly with our Yakima Valley and European floor-malt partners for recurring commercial deliveries with locked-in seasonal pricing.</p>
+        </div>
+        <button onclick="switchTab('contact')" class="px-8 py-4 rounded-2xl bg-amber-600 hover:bg-amber-700 text-white font-extrabold text-xs uppercase tracking-wider shrink-0 transition-all shadow-lg">Request Wholesale Account</button>
+    </div>
+</div>

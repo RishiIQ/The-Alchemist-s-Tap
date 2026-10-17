@@ -1,0 +1,172 @@
+<div class="space-y-16">
+    <!-- SECTION 1: Pricing Hero -->
+    <div class="relative rounded-3xl overflow-hidden editorial-card p-8 sm:p-16 bg-stone-900 text-white">
+        <div class="absolute inset-0 z-0 opacity-80">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpAIc4XR4H5lvsxa98LqmB2ftdSbt0ocnwY2JDwUzZD4T289JiTslbG5Jy&s=10" alt="Pricing Header" class="w-full h-full object-cover">
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-r from-stone-950 via-stone-950/80 to-transparent z-10"></div>
+        <div class="relative z-20 max-w-2xl space-y-3 lg:py-24 md:py-20 sm:py-18">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Investment Plans</span>
+            <h1 class="text-4xl sm:text-5xl font-bold text-white">Transparent Guild Pricing</h1>
+            <p class="text-stone-300 text-sm">Choose from individual homebrewing starter tiers, microbrewery inventory bundles, or enterprise telemetry cloud subscriptions.</p>
+        </div>
+    </div>
+
+    <!-- SECTION 2: Core Pricing Tiers Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="editorial-card p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+            <div class="space-y-4">
+                <span class="text-xs uppercase font-bold text-stone-500">Apprentice Kit</span>
+                <h4 class="text-3xl font-bold text-espressoText dark:text-white">$89<span class="text-xs text-stone-500">/one-time</span></h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs">Essential 1-gallon stovetop hardware and starter recipe pack.</p>
+                <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
+                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Glass Jug Fermenter</li>
+                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Standard Mini Auto-Siphon</li>
+                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Single Clone Recipe Pack</li>
+                </ul>
+            </div>
+            <button onclick="switchTab('products')" class="w-full py-3 rounded-xl bg-stone-900 dark:bg-stone-800 text-white font-bold text-xs uppercase transition-colors">Select Apprentice</button>
+        </div>
+
+        <div class="editorial-card p-8 rounded-3xl space-y-6 flex flex-col justify-between border-amber-600 bg-amber-50/50 dark:bg-amber-950/20 shadow-xl">
+            <div class="space-y-4">
+                <span class="px-3 py-1 rounded-full bg-amber-600 text-white text-[10px] font-bold uppercase">Most Popular</span>
+                <h4 class="text-3xl font-bold text-espressoText dark:text-white">$189<span class="text-xs text-stone-500">/one-time</span></h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs">Professional 5-gallon stainless steel homebrewing rig price pack</p>
+                <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
+                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Stainless Steel Brew Kettle</li>
+                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>6.5-Gallon Glass Carboy</li>
+                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Digital Thermometer & Hydrometer</li>
+                </ul>
+            </div>
+            <button onclick="addToCart(1)" class="w-full py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add Pro Kit ($189.99)</button>
+        </div>
+
+        <div class="editorial-card p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+            <div class="space-y-4">
+                <span class="text-xs uppercase font-bold text-stone-500">Microbrewery Cloud</span>
+                <h4 class="text-3xl font-bold text-espressoText dark:text-white">$79<span class="text-xs text-stone-500">/mo</span></h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs">Advanced IoT tank telemetry and automated ingredient reordering.</p>
+                <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
+                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Unlimited Active Batches</li>
+                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Wireless Hydrometer Sync</li>
+                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Automated Supplier POs</li>
+                </ul>
+            </div>
+            <button onclick="switchTab('saas')" class="w-full py-3 rounded-xl bg-stone-900 dark:bg-stone-800 text-white font-bold text-xs uppercase transition-colors">Explore Cloud</button>
+        </div>
+    </div>
+
+    <!-- SECTION 3: Detailed Feature Comparison Matrix -->
+    <div class="editorial-card p-8 rounded-3xl space-y-6">
+        <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Comparison Matrix</span>
+        <h3 class="text-2xl font-bold text-espressoText dark:text-white">Detailed Plan Breakdown</h3>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left text-xs text-stone-600 dark:text-stone-300">
+                <thead class="border-b border-stone-200 dark:border-stone-800 text-espressoText dark:text-white uppercase">
+                    <tr>
+                        <th class="py-3 px-4">Feature / Specification</th>
+                        <th class="py-3 px-4">Apprentice</th>
+                        <th class="py-3 px-4">Pro 5-Gallon</th>
+                        <th class="py-3 px-4">Micro Cloud</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-stone-100 dark:divide-stone-800">
+                    <tr>
+                        <td class="py-3 px-4 font-bold text-espressoText dark:text-white">Batch Capacity</td>
+                        <td class="py-3 px-4">1 Gallon</td>
+                        <td class="py-3 px-4">5 Gallons</td>
+                        <td class="py-3 px-4">Unlimited (Commercial)</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 font-bold text-espressoText dark:text-white">Vessel Material</td>
+                        <td class="py-3 px-4">Glass Jug</td>
+                        <td class="py-3 px-4">Heavy Glass Carboy + Steel</td>
+                        <td class="py-3 px-4">Stainless Industrial Tanks</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 font-bold text-espressoText dark:text-white">Telemetry & IoT Sync</td>
+                        <td class="py-3 px-4">Manual Log</td>
+                        <td class="py-3 px-4">Manual Log</td>
+                        <td class="py-3 px-4">Automated Wi-Fi / Bluetooth</td>
+                    </tr>
+                    <tr>
+                        <td class="py-3 px-4 font-bold text-espressoText dark:text-white">Support Level</td>
+                        <td class="py-3 px-4">Community Forum</td>
+                        <td class="py-3 px-4">Priority Email</td>
+                        <td class="py-3 px-4">24/7 Brewmaster Line</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- SECTION 4: Volume & Wholesale Discounts -->
+    <div class="editorial-card p-8 rounded-3xl bg-stone-900 text-white border-stone-800 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2">
+            <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Bulk Savings</span>
+            <h3 class="text-2xl font-bold">Save up to 20% on Bulk Grain Sacks</h3>
+            <p class="text-stone-300 text-xs">Automatic tier discounts applied at cart checkout when purchasing 5 or more 25kg base malt sacks.</p>
+        </div>
+        <button onclick="switchTab('products')" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wider shrink-0 transition-colors">Shop Malts</button>
+    </div>
+
+    <!-- SECTION 5: Add-On Modules & Hardware Upgrades -->
+    <div class="editorial-card p-8 rounded-3xl space-y-6">
+        <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Modular Enhancements</span>
+        <h3 class="text-2xl font-bold text-espressoText dark:text-white">Optional Hardware Add-Ons</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="p-5 rounded-2xl bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 space-y-2">
+                <h4 class="font-bold text-espressoText dark:text-white">Magnetic Stir Plate</h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs">For high-gravity yeast propagation flasks ($49.99).</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 space-y-2">
+                <h4 class="font-bold text-espressoText dark:text-white">Stainless Cornelian Keg</h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs">5-gallon ball-lock keg for skipping bottling day ($129.99).</p>
+            </div>
+            <div class="p-5 rounded-2xl bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 space-y-2">
+                <h4 class="font-bold text-espressoText dark:text-white">Digital Refractometer</h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs">Automatic temperature compensated gravity testing ($39.99).</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION 6: Shipping & Delivery Costs -->
+    <div class="editorial-card p-8 rounded-3xl space-y-4">
+        <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Logistics Pricing</span>
+        <h3 class="text-2xl font-bold text-espressoText dark:text-white">Transparent Shipping Rates</h3>
+        <p class="text-stone-600 dark:text-stone-400 text-xs leading-relaxed">Standard ground shipping is flat-rate $9.99 across North America. Free ground shipping is automatically unlocked on all retail equipment kits and orders over $150. Perishable liquid yeast orders include complimentary thermal ice pack mailers.</p>
+    </div>
+
+    <!-- SECTION 7: Flexible Payment & Financing -->
+    <div class="editorial-card p-8 rounded-3xl space-y-4">
+        <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Payment Terms</span>
+        <h3 class="text-2xl font-bold text-espressoText dark:text-white">Interest-Free Installments</h3>
+        <p class="text-stone-600 dark:text-stone-400 text-xs leading-relaxed">Split your equipment purchases into 4 equal monthly installments with zero interest via our secure checkout gateway. All major credit cards, UPI transfers, and Cash on Delivery (COD) options are fully supported.</p>
+    </div>
+
+    <!-- SECTION 8: Guild Member Rewards & Loyalty -->
+    <div class="editorial-card p-8 rounded-3xl bg-amber-50 dark:bg-amber-950/40 border-amber-200 dark:border-stone-800 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="space-y-2">
+            <span class="text-amber-800 dark:text-amber-400 font-bold text-xs uppercase tracking-widest">Loyalty Program</span>
+            <h3 class="text-2xl font-bold text-espressoText dark:text-white">Earn Alchemist Gold Points</h3>
+            <p class="text-stone-700 dark:text-stone-300 text-xs">Earn 5 points for every $1 spent on hops and malts, redeemable for free recipe kits and store merchandise.</p>
+        </div>
+        <button onclick="showToast('Rewards', 'Guild loyalty portal opened.')" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wider shrink-0 transition-colors">Join Guild Club</button>
+    </div>
+
+    <!-- SECTION 9: Satisfaction Guarantee & Refund Policy -->
+    <div class="editorial-card p-8 rounded-3xl space-y-4 text-center">
+        <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Our Promise</span>
+        <h3 class="text-2xl font-bold text-espressoText dark:text-white">30-Day Money-Back Guarantee</h3>
+        <p class="text-stone-600 dark:text-stone-400 text-xs max-w-xl mx-auto">If your hardware kit arrives damaged or your liquid yeast culture arrives outside viable temperature specs, we will replace it or issue a full refund within 30 days—no questions asked.</p>
+    </div>
+
+    <!-- SECTION 10: Pricing FAQ Callout -->
+    <div class="editorial-card p-8 sm:p-12 rounded-3xl bg-stone-900 text-white border-stone-800 text-center space-y-4">
+        <span class="text-amber-400 font-bold text-xs uppercase tracking-widest">Need Custom Pricing?</span>
+        <h3 class="text-3xl font-bold">Have Questions About Custom Brew Club Orders?</h3>
+        <p class="text-stone-300 text-xs max-w-md mx-auto">Speak directly with our master brewmasters to build a custom ingredient subscription package tailored to your group.</p>
+        <button onclick="switchTab('contact')" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wider transition-colors inline-block mt-2">Contact Brewmasters</button>
+    </div>
+</div>

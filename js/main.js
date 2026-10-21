@@ -427,10 +427,10 @@ function injectHeaderAndFooter() {
                         <div>
     <h4 class="font-bold text-stone-800 dark:text-white mb-4 uppercase text-[11px] tracking-wider">Inventory</h4>
     <ul class="space-y-2.5 text-slate-800 dark:text-white/60">
-        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('kits'), 200);" class="hover:text-amber-400 transition-colors cursor-pointer">All-in-One Kits</button></li>
-        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('malts'), 200);" class="hover:text-amber-400 transition-colors cursor-pointer">Maris Otter Malts</button></li>
-        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('hops'), 200);" class="hover:text-amber-400 transition-colors cursor-pointer">Citra & Cascade Hops</button></li>
-        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('equipment'), 200);" class="hover:text-amber-400 transition-colors cursor-pointer">Liquid Yeast & Gear</button></li>
+        <li><button onclick="switchTab('products', 'kits')" class="hover:text-amber-400 transition-colors cursor-pointer">All-in-One Kits</button></li>
+        <li><button onclick="switchTab('products', 'malts')" class="hover:text-amber-400 transition-colors cursor-pointer">Maris Otter Malts</button></li>
+        <li><button onclick="switchTab('products', 'hops')" class="hover:text-amber-400 transition-colors cursor-pointer">Citra & Cascade Hops</button></li>
+        <li><button onclick="switchTab('products', 'equipment')" class="hover:text-amber-400 transition-colors cursor-pointer">Liquid Yeast & Gear</button></li>
     </ul>
 </div>
                         <div>
@@ -507,6 +507,7 @@ async function switchTab(tabId, categoryFilter = null) {
     if(!viewContainer) return;
 
     try {
+        // Use an absolute-relative path or ensure exact lowercase match for Vercel Linux servers
         let templateFilename = `${tabId}.html`;
         const response = await fetch(templateFilename);
         if(response.ok) {
@@ -538,7 +539,24 @@ async function switchTab(tabId, categoryFilter = null) {
         renderHomeFeatured();
         calculateABV();
     } else if(tabId === 'products') {
-        renderProducts(categoryFilter || 'all');
+        // Ensure products grid is present before filtering
+        const checkGrid = setInterval(() => {
+            const grid = document.getElementById('product-grid');
+            if (grid) {
+                clearInterval(checkGrid);
+                renderProducts(categoryFilter || 'all');
+                // Highlight active filter button if it exists
+                document.querySelectorAll('.product-filter-btn').forEach(btn => {
+                    if(btn.dataset.filter === (categoryFilter || 'all')) {
+                        btn.classList.remove('bg-stone-100', 'dark:bg-stone-800', 'text-stone-600', 'dark:text-stone-300', 'border');
+                        btn.classList.add('bg-amber-600', 'text-white', 'shadow-md');
+                    } else {
+                        btn.classList.remove('bg-amber-600', 'text-white', 'shadow-md');
+                        btn.classList.add('bg-stone-100', 'dark:bg-stone-800', 'text-stone-600', 'dark:text-stone-300', 'border', 'border-stone-200', 'dark:border-stone-700');
+                    }
+                });
+            }
+        }, 50);
     } else if(tabId === 'recipes') {
         renderBlog();
     }

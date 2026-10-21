@@ -12,50 +12,50 @@
         </div>
     </div>
 
-    <!-- SECTION 2: Core Pricing Tiers Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="editorial-card p-8 rounded-3xl space-y-6 flex flex-col justify-between">
-            <div class="space-y-4">
-                <span class="text-xs uppercase font-bold text-stone-500">Apprentice Kit</span>
-                <h4 class="text-3xl font-bold text-espressoText dark:text-white">$89<span class="text-xs text-stone-500">/one-time</span></h4>
-                <p class="text-stone-600 dark:text-stone-400 text-xs">Essential 1-gallon stovetop hardware and starter recipe pack.</p>
-                <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
-                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Glass Jug Fermenter</li>
-                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Standard Mini Auto-Siphon</li>
-                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Single Clone Recipe Pack</li>
-                </ul>
-            </div>
-            <button onclick="switchTab('products')" class="w-full py-3 rounded-xl bg-stone-900 dark:bg-stone-800 text-white font-bold text-xs uppercase transition-colors">Select Apprentice</button>
+   <!-- SECTION 2: Core Pricing Tiers Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="editorial-card p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+        <div class="space-y-4">
+            <span class="text-xs uppercase font-bold text-stone-500">Apprentice Kit</span>
+            <h4 class="text-3xl font-bold text-espressoText dark:text-white">$89<span class="text-xs text-stone-500">/one-time</span></h4>
+            <p class="text-stone-600 dark:text-stone-400 text-xs">Essential 1-gallon stovetop hardware and starter recipe pack.</p>
+            <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
+                <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Glass Jug Fermenter</li>
+                <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Standard Mini Auto-Siphon</li>
+                <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Single Clone Recipe Pack</li>
+            </ul>
         </div>
-
-        <div class="editorial-card p-8 rounded-3xl space-y-6 flex flex-col justify-between border-amber-600 bg-amber-50/50 dark:bg-amber-950/20 shadow-xl">
-            <div class="space-y-4">
-                <span class="px-3 py-1 rounded-full bg-amber-600 text-white text-[10px] font-bold uppercase">Most Popular</span>
-                <h4 class="text-3xl font-bold text-espressoText dark:text-white">$189<span class="text-xs text-stone-500">/one-time</span></h4>
-                <p class="text-stone-600 dark:text-stone-400 text-xs">Professional 5-gallon stainless steel homebrewing rig price pack</p>
-                <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
-                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Stainless Steel Brew Kettle</li>
-                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>6.5-Gallon Glass Carboy</li>
-                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Digital Thermometer & Hydrometer</li>
-                </ul>
-            </div>
-            <button onclick="addToCart(1)" class="w-full py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add Pro Kit ($189.99)</button>
-        </div>
-
-        <div class="editorial-card p-8 rounded-3xl space-y-6 flex flex-col justify-between">
-            <div class="space-y-4">
-                <span class="text-xs uppercase font-bold text-stone-500">Microbrewery Cloud</span>
-                <h4 class="text-3xl font-bold text-espressoText dark:text-white">$79<span class="text-xs text-stone-500">/mo</span></h4>
-                <p class="text-stone-600 dark:text-stone-400 text-xs">Advanced IoT tank telemetry and automated ingredient reordering.</p>
-                <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
-                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Unlimited Active Batches</li>
-                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Wireless Hydrometer Sync</li>
-                    <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Automated Supplier POs</li>
-                </ul>
-            </div>
-            <button onclick="switchTab('saas')" class="w-full py-3 rounded-xl bg-stone-900 dark:bg-stone-800 text-white font-bold text-xs uppercase transition-colors">Explore Cloud</button>
-        </div>
+        <button onclick="openPricingConfirmation('Apprentice Kit', 89.00, 'product')" class="w-full py-3 rounded-xl bg-stone-900 dark:bg-stone-800 text-white font-bold text-xs uppercase transition-colors cursor-pointer">Select Apprentice</button>
     </div>
+
+    <div class="editorial-card p-8 rounded-3xl space-y-6 flex flex-col justify-between border-amber-600 bg-amber-50/50 dark:bg-amber-950/20 shadow-xl">
+        <div class="space-y-4">
+            <span class="px-3 py-1 rounded-full bg-amber-600 text-white text-[10px] font-bold uppercase">Most Popular</span>
+            <h4 class="text-3xl font-bold text-espressoText dark:text-white">$189<span class="text-xs text-stone-500">/one-time</span></h4>
+            <p class="text-stone-600 dark:text-stone-400 text-xs">Professional 5-gallon stainless steel homebrewing rig price pack</p>
+            <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
+                <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Stainless Steel Brew Kettle</li>
+                <li><i class="fa-solid fa-check text-amber-600 me-2"></i>6.5-Gallon Glass Carboy</li>
+                <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Digital Thermometer & Hydrometer</li>
+            </ul>
+        </div>
+        <button onclick="openPricingConfirmation('Alchemist Pro 5-Gallon Starter Kit', 189.99, 'product')" class="w-full py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors cursor-pointer">Add Pro Kit ($189.99)</button>
+    </div>
+
+    <div class="editorial-card p-8 rounded-3xl space-y-6 flex flex-col justify-between">
+        <div class="space-y-4">
+            <span class="text-xs uppercase font-bold text-stone-500">Microbrewery Cloud</span>
+            <h4 class="text-3xl font-bold text-espressoText dark:text-white">$79<span class="text-xs text-stone-500">/mo</span></h4>
+            <p class="text-stone-600 dark:text-stone-400 text-xs">Advanced IoT tank telemetry and automated ingredient reordering.</p>
+            <ul class="space-y-2.5 text-xs text-stone-600 dark:text-stone-400">
+                <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Unlimited Active Batches</li>
+                <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Wireless Hydrometer Sync</li>
+                <li><i class="fa-solid fa-check text-amber-600 me-2"></i>Automated Supplier POs</li>
+            </ul>
+        </div>
+        <button onclick="openPricingConfirmation('Microbrewery Cloud Subscription', 79.00, 'subscription')" class="w-full py-3 rounded-xl bg-stone-900 dark:bg-stone-800 text-white font-bold text-xs uppercase transition-colors cursor-pointer">Explore Cloud</button>
+    </div>
+</div>
 
     <!-- SECTION 3: Detailed Feature Comparison Matrix -->
     <div class="editorial-card p-8 rounded-3xl space-y-6">

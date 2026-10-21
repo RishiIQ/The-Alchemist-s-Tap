@@ -29,61 +29,65 @@
     <!-- SECTION 3: Main Product Grid (Dynamic Injection Container) -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="product-grid"></div>
 
-    <!-- SECTION 4: Expanded Long-Length Inventory Racks (Sub-Categories) -->
-    <div class="space-y-8 pt-6">
-        <div class="border-t border-stone-200 dark:border-stone-800 pt-12">
-            <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Extended Sourcing</span>
-            <h2 class="text-3xl font-bold text-espressoText dark:text-white mt-1">Specialty Adjuncts & Water Salts</h2>
-            <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Fine-tune mash conversion chemistry and head retention with laboratory-grade brewing minerals and adjunct packets.</p>
-        </div>
+   <!-- SECTION 4: Expanded Long-Length Inventory Racks (Sub-Categories) -->
+<div class="space-y-8 pt-6">
+    <div class="border-t border-stone-200 dark:border-stone-800 pt-12">
+        <span class="text-amber-700 dark:text-amber-500 font-bold text-xs uppercase tracking-widest">Extended Sourcing</span>
+        <h2 class="text-3xl font-bold text-espressoText dark:text-white mt-1">Specialty Adjuncts & Water Salts</h2>
+        <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Fine-tune mash conversion chemistry and head retention with laboratory-grade brewing minerals and adjunct packets.</p>
+    </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-            <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
-                <div>
-                    <span class="text-[10px] font-bold text-amber-600 uppercase">Minerals</span>
-                    <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Brewers Gypsum (Calcium Sulfate) - 1kg</h4>
-                    <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Enhances hop crispness and bittering profile in pale ales.</p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
-                    <span class="font-extrabold text-amber-700 text-base">$8.99</span>
-                    <button onclick="addToCart(101)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
-                </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfeJtpcl6cAjv7BbrjSMZ7-gcXddOAS46UxRSHcN2kAO-vbkpXt7RKBqg&s=10" alt="Brewers Gypsum" class="w-full h-40 object-cover rounded-xl mb-3">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Minerals</span>
+                <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Brewers Gypsum (Calcium Sulfate) - 1kg</h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Enhances hop crispness and bittering profile in pale ales.</p>
             </div>
-            <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
-                <div>
-                    <span class="text-[10px] font-bold text-amber-600 uppercase">Minerals</span>
-                    <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Calcium Chloride Flakes - 1kg</h4>
-                    <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Softens water profiles to accentuate round malt sweetness.</p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
-                    <span class="font-extrabold text-amber-700 text-base">$9.49</span>
-                    <button onclick="addToCart(102)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
-                </div>
+            <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
+                <span class="font-extrabold text-amber-700 text-base">$8.99</span>
+                <button onclick="addToCart(101)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
             </div>
-            <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
-                <div>
-                    <span class="text-[10px] font-bold text-amber-600 uppercase">Clarifiers</span>
-                    <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Whirlfloc Tablet (Pack of 50)</h4>
-                    <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Irish moss extract for superior hot break precipitation and clear wort.</p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
-                    <span class="font-extrabold text-amber-700 text-base">$12.99</span>
-                    <button onclick="addToCart(103)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
-                </div>
+        </div>
+        <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
+            <div>
+                <img src="https://m.media-amazon.com/images/I/61e-CWsA7wL._AC_UF1000,1000_QL80_.jpg" alt="Calcium Chloride Flakes" class="w-full h-40 object-cover rounded-xl mb-3">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Minerals</span>
+                <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Calcium Chloride Flakes - 1kg</h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Softens water profiles to accentuate round malt sweetness.</p>
             </div>
-            <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
-                <div>
-                    <span class="text-[10px] font-bold text-amber-600 uppercase">Sanitizers</span>
-                    <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Star San Acid Sanitizer - 32oz</h4>
-                    <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">No-rinse foaming sanitizer for absolute contamination control.</p>
-                </div>
-                <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
-                    <span class="font-extrabold text-amber-700 text-base">$21.99</span>
-                    <button onclick="addToCart(104)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
-                </div>
+            <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
+                <span class="font-extrabold text-amber-700 text-base">$9.49</span>
+                <button onclick="addToCart(102)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
+            </div>
+        </div>
+        <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf07_-gN7aHSX3QTJ5vIRBXAlh57809sn1OIvLAYFcdbxMhh36B-AbiHqT&s=10" alt="Whirlfloc Tablet" class="w-full h-40 object-cover rounded-xl mb-3">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Clarifiers</span>
+                <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Whirlfloc Tablet (Pack of 50)</h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">Irish moss extract for superior hot break precipitation and clear wort.</p>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
+                <span class="font-extrabold text-amber-700 text-base">$12.99</span>
+                <button onclick="addToCart(103)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
+            </div>
+        </div>
+        <div class="editorial-card p-5 rounded-2xl flex flex-col justify-between space-y-4">
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6UnrpAeu8ye3_V5_AtZUVEYUKRvEsx8D-pI_ytAwwhg&s" alt="Star San Acid Sanitizer" class="w-full h-40 object-cover rounded-xl mb-3">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Sanitizers</span>
+                <h4 class="font-bold text-sm text-espressoText dark:text-white mt-1">Star San Acid Sanitizer - 32oz</h4>
+                <p class="text-stone-600 dark:text-stone-400 text-xs mt-2">No-rinse foaming sanitizer for absolute contamination control.</p>
+            </div>
+            <div class="flex items-center justify-between pt-4 border-t border-stone-100 dark:border-stone-800">
+                <span class="font-extrabold text-amber-700 text-base">$21.99</span>
+                <button onclick="addToCart(104)" class="px-3.5 py-2 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase transition-colors">Add</button>
             </div>
         </div>
     </div>
+</div>
 
     <!-- SECTION 5: Commercial Bulk Inquiry Banner -->
     <div class="editorial-card p-8 sm:p-12 rounded-3xl bg-stone-900 text-white border-stone-800 flex flex-col md:flex-row items-center justify-between gap-6">

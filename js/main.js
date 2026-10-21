@@ -66,7 +66,7 @@ const productsData = [
         price: 89.99,
         rating: 4.7,
         reviews: 64,
-        image: "https://craftabrew.com/cdn/shop/files/everyday_5_gallon_bucket_thumb-2.webp?v=1761251508&width=480",
+        image: "https://m.media-amazon.com/images/I/71urdCM7LAL.jpg",
         description: "Everything required to brew your very first gallon of craft American Pale Ale right on a standard kitchen stove."
     },
     {
@@ -76,7 +76,7 @@ const productsData = [
         price: 58.00,
         rating: 4.9,
         reviews: 82,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DT9zTXXiFS4OeLbyoXOcDeNHi2FM-QKaRlbrHKMD-qf8N47B1m_auAA&s=10",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRosmfA_6kZnWX3AV5XiNxwXjW0qMOWKtewCsnGr1_e6g&s=10",
         description: "Lightly kilned continental pilsner malt delivering a clean, straw-colored wort with delicate sweet malt notes."
     },
     {
@@ -86,7 +86,7 @@ const productsData = [
         price: 29.99,
         rating: 5.0,
         reviews: 174,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR514Ulfsb5orcSRjU_CKBv5jM1WOkRePBx3ORGqTylAwjc7kGuE7H1_c3d&s=10",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8AWGfvU_Y6lfI71HltM5eEU_yfIPNYBnkqfmwIq0KGQ&s",
         description: "Ultra-concentrated lupulin pellets loaded with dank pine, blueberry, and tropical stone fruit aromas."
     },
     {
@@ -96,7 +96,7 @@ const productsData = [
         price: 12.50,
         rating: 4.8,
         reviews: 95,
-        image: "https://d1w7312wesee68.cloudfront.net/fHaFTx_1iABf_DtapzvSDnsqOUA3IXbyDSFoumJuZOo/resize:fit:720:720/plain/s3://toasttab/restaurants/restaurant-8876000000000000/menu/items/6/item-100000055819838006_1770320998.jpg",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxFU-V5ZHOleTikTGUlzDhEXB_DyMTX4V13AJVaGCsyXtN9CbQMp1GPsTw&s=10",
         description: "Authentic trappist abbey strain producing complex dark fruit, plum, and spicy clove phenols."
     },
     {
@@ -106,7 +106,7 @@ const productsData = [
         price: 34.99,
         rating: 4.7,
         reviews: 110,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3vFgJhlIhpxfgkev88r7pPPDLJ1HMQm20ptvBeJtI5irhdYEn9aGAhc&s=10",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ37E8jtE5VXn_K86X7ucLP9C2wMAoaD4h9uwGYRIY6QtvkYJit5KFovtw&s=10",
         description: "Sanitary stainless racking cane with sediment trap clip and food-grade silicone transfer tubing."
     },
     {
@@ -116,7 +116,7 @@ const productsData = [
         price: 64.99,
         rating: 4.9,
         reviews: 138,
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3vFgJhlIhpxfgkev88r7pPPDLJ1HMQm20ptvBeJtI5irhdYEn9aGAhc&s=10",
+        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSRFWVLuXItKcDdkHiu3mDbH0c5HeSm1aGq7qNVXGVkQ&s=10",
         description: "Waterproof pocket pH tester with auto-temperature compensation and fast-response immersion probe."
     },
     {
@@ -296,7 +296,7 @@ function injectHeaderAndFooter() {
     const headerContainer = document.getElementById('app-header-container');
     if(headerContainer) {
         headerContainer.innerHTML = `
-            <header class="fixed top-4 sm:top-6 inset-x-0 z-50 max-w-7xl mx-auto px-3 sm:px-6">
+            <header class="fixed  top-0 inset-x-0 z-50 max-w-7xl mx-auto px-3 sm:px-6">
                 <div class="bg-white/90 dark:bg-stone-900/90 backdrop-blur-xl border border-stone-200/80 dark:border-stone-800 rounded-2xl px-3 sm:px-6 py-2.5 sm:py-3.5 flex items-center justify-between shadow-lg shadow-stone-900/5">
                     <a href="#home" onclick="switchTab('home')" class="flex items-center space-x-2.5 rtl:space-x-reverse group cursor-pointer min-w-0 pr-2">
                         <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-amber-600 flex items-center justify-center text-white font-extrabold shadow-md shadow-amber-600/20 group-hover:rotate-6 transition-transform shrink-0">
@@ -398,6 +398,19 @@ function injectHeaderAndFooter() {
                                 </div>
                             </a>
                             <p class="text-[11px] text-stone-800 dark:text-white/60 leading-relaxed">Artisanal floor malts, vacuum nitrogen hops, and precision brewing starter systems.</p>
+                            
+                            <!-- Social Media Icons -->
+                            <div class="flex items-center space-x-3 pt-2">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-stone-800 border border-stone-700 hover:bg-amber-600 text-amber-400 hover:text-white flex items-center justify-center transition-all shadow-md" title="Instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-stone-800 border border-stone-700 hover:bg-amber-600 text-amber-400 hover:text-white flex items-center justify-center transition-all shadow-md" title="YouTube">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                                <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-xl bg-stone-800 border border-stone-700 hover:bg-amber-600 text-amber-400 hover:text-white flex items-center justify-center transition-all shadow-md" title="Facebook">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </div>
                         </div>
                         <div>
                             <h4 class="font-bold text-stone-800 dark:text-white mb-4 uppercase text-[11px] tracking-wider">Quick Links</h4>
@@ -414,10 +427,10 @@ function injectHeaderAndFooter() {
                         <div>
                             <h4 class="font-bold text-stone-800 dark:text-white mb-4 uppercase text-[11px] tracking-wider">Inventory</h4>
                             <ul class="space-y-2.5 text-slate-800 dark:text-white/60">
-                                <li><button onclick="switchTab('products')" class="hover:text-amber-400 transition-colors">All-in-One Kits</button></li>
-                                <li><button onclick="switchTab('products')" class="hover:text-amber-400 transition-colors">Maris Otter Malts</button></li>
-                                <li><button onclick="switchTab('products')" class="hover:text-amber-400 transition-colors">Citra & Cascade Hops</button></li>
-                                <li><button onclick="switchTab('products')" class="hover:text-amber-400 transition-colors">Liquid Yeast</button></li>
+                                <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('kits'), 100);" class="hover:text-amber-400 transition-colors cursor-pointer">All-in-One Kits</button></li>
+                                <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('malts'), 100);" class="hover:text-amber-400 transition-colors cursor-pointer">Maris Otter Malts</button></li>
+                                <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('hops'), 100);" class="hover:text-amber-400 transition-colors cursor-pointer">Citra & Cascade Hops</button></li>
+                                <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('equipment'), 100);" class="hover:text-amber-400 transition-colors cursor-pointer">Liquid Yeast & Gear</button></li>
                             </ul>
                         </div>
                         <div>
@@ -429,9 +442,10 @@ function injectHeaderAndFooter() {
                             </form>
                         </div>
                     </div>
-                    <div class="pt-8 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between text-stone-500 text-[11px]">
+                    <!-- Centered Copyright and Footer Links -->
+                    <div class="pt-8 border-t border-stone-800 flex flex-col items-center justify-center text-center text-stone-500 text-[11px] space-y-3">
                         <p>&copy; 2026 The Alchemist's Tap Inc. All rights reserved.</p>
-                        <div class="flex space-x-4 mt-4 sm:mt-0">
+                        <div class="flex space-x-4">
                             <button onclick="switchTab('privacy')" class="hover:text-amber-600">Privacy Policy</button>
                             <button onclick="switchTab('terms')" class="hover:text-amber-600">Terms of Service</button>
                         </div>
@@ -582,7 +596,7 @@ function renderHomeFeatured() {
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-stone-200 dark:border-stone-800">
                     <span class="text-2xl font-extrabold text-amber-700 dark:text-amber-500">$${p.price.toFixed(2)}</span>
-                    <button onclick="addToCart(${p.id})" class="px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold tracking-wider uppercase shadow transition-all flex items-center space-x-2 rtl:space-x-reverse">
+                    <button onclick="addToCart(${p.id})" class="px-4 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold tracking-wider uppercase shadow transition-all flex items-center space-x-2 rtl:space-x-reverse cursor-pointer">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Add</span>
                     </button>
@@ -613,7 +627,7 @@ function renderProducts(filter) {
                 </div>
                 <div class="flex items-center justify-between pt-4 border-t border-stone-200 dark:border-stone-800">
                     <span class="text-2xl font-extrabold text-amber-700 dark:text-amber-500">$${p.price.toFixed(2)}</span>
-                    <button onclick="addToCart(${p.id})" class="px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold tracking-wider uppercase shadow transition-all flex items-center space-x-2 rtl:space-x-reverse">
+                    <button onclick="addToCart(${p.id})" class="px-5 py-2.5 rounded-xl bg-amber-600 hover:bg-amber-700 text-white text-xs font-bold tracking-wider uppercase shadow transition-all flex items-center space-x-2 rtl:space-x-reverse cursor-pointer">
                         <i class="fa-solid fa-cart-shopping"></i>
                         <span>Add to Cart</span>
                     </button>
@@ -715,11 +729,11 @@ function updateCartUI() {
                 </div>
                 <div class="flex items-center space-x-3 rtl:space-x-reverse">
                     <div class="flex items-center space-x-2 rtl:space-x-reverse bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-lg px-2 py-1">
-                        <button onclick="updateQty(${item.id}, -1)" class="text-stone-500 hover:text-stone-900 dark:hover:text-white px-1">-</button>
+                        <button onclick="updateQty(${item.id}, -1)" class="text-stone-500 hover:text-stone-900 dark:hover:text-white px-1 cursor-pointer">-</button>
                         <span class="text-xs font-bold text-espressoText dark:text-white">${item.qty}</span>
-                        <button onclick="updateQty(${item.id}, 1)" class="text-stone-500 hover:text-stone-900 dark:hover:text-white px-1">+</button>
+                        <button onclick="updateQty(${item.id}, 1)" class="text-stone-500 hover:text-stone-900 dark:hover:text-white px-1 cursor-pointer">+</button>
                     </div>
-                    <button onclick="removeFromCart(${item.id})" class="text-red-500 hover:text-red-600 p-1">
+                    <button onclick="removeFromCart(${item.id})" class="text-red-500 hover:text-red-600 p-1 cursor-pointer">
                         <i class="fa-solid fa-trash-can"></i>
                     </button>
                 </div>
@@ -766,19 +780,19 @@ function checkoutCart() {
     
     closeCartDrawer();
     const totalAmount = cart.reduce((sum, item) => sum + (item.price * item.qty), 0);
-    selectedPaymentMethod = 'cod';
+    selectedPaymentMethod = 'cod'; // Default to COD
 
     let modal = document.getElementById('transaction-modal');
     if (!modal) {
         modal = document.createElement('div');
         modal.id = 'transaction-modal';
-        modal.className = 'fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/70 backdrop-blur-sm';
+        modal.className = 'fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/70 backdrop-blur-sm overflow-y-auto';
         document.body.appendChild(modal);
     }
 
     modal.innerHTML = `
-        <div class="bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-3xl max-w-lg w-full shadow-2xl p-6 sm:p-8 space-y-6 relative">
-            <button onclick="closeTransactionModal()" class="absolute top-6 ltr:right-6 rtl:left-6 p-2 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors">
+        <div class="bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-3xl max-w-lg w-full shadow-2xl p-6 sm:p-8 space-y-6 relative my-8">
+            <button onclick="closeTransactionModal()" class="absolute top-6 ltr:right-6 rtl:left-6 p-2 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors cursor-pointer">
                 <i class="fa-solid fa-xmark text-sm"></i>
             </button>
             <div class="space-y-1">
@@ -791,32 +805,53 @@ function checkoutCart() {
                 <div class="space-y-2">
                     <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 dark:text-stone-300">Select Option</label>
                     <div class="grid grid-cols-3 gap-3">
-                        <button type="button" onclick="selectPaymentMethod('cod')" id="pay-method-cod" class="p-3 rounded-2xl border-2 border-amber-600 bg-amber-50 dark:bg-amber-950/40 text-espressoText dark:text-white text-xs font-bold flex flex-col items-center space-y-1 transition-all">
+                        <button type="button" onclick="selectPaymentMethod('cod')" id="pay-method-cod" class="p-3 rounded-2xl border-2 border-amber-600 bg-amber-50 dark:bg-amber-950/40 text-espressoText dark:text-white text-xs font-bold flex flex-col items-center space-y-1 transition-all cursor-pointer">
                             <i class="fa-solid fa-truck text-amber-600 text-base"></i>
                             <span>COD</span>
                         </button>
-                        <button type="button" onclick="selectPaymentMethod('card')" id="pay-method-card" class="p-3 rounded-2xl border-2 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-300 text-xs font-bold flex flex-col items-center space-y-1 transition-all">
+                        <button type="button" onclick="selectPaymentMethod('card')" id="pay-method-card" class="p-3 rounded-2xl border-2 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-300 text-xs font-bold flex flex-col items-center space-y-1 transition-all cursor-pointer">
                             <i class="fa-solid fa-credit-card text-base"></i>
                             <span>Card</span>
                         </button>
-                        <button type="button" onclick="selectPaymentMethod('upi')" id="pay-method-upi" class="p-3 rounded-2xl border-2 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-300 text-xs font-bold flex flex-col items-center space-y-1 transition-all">
+                        <button type="button" onclick="selectPaymentMethod('upi')" id="pay-method-upi" class="p-3 rounded-2xl border-2 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-300 text-xs font-bold flex flex-col items-center space-y-1 transition-all cursor-pointer">
                             <i class="fa-solid fa-mobile-screen-button text-base"></i>
                             <span>UPI</span>
                         </button>
                     </div>
                 </div>
 
+                <!-- Pre-rendered COD inputs by default with strict max widths and constraints -->
                 <div id="payment-fields-container" class="space-y-3 pt-2">
-                    <div class="p-4 bg-stone-50 dark:bg-stone-800 rounded-2xl text-center text-xs text-stone-600 dark:text-stone-300 font-bold">
-                        <i class="fa-solid fa-box-open text-xl text-amber-600 mb-1 block"></i>
-                        Cash on Delivery selected. Pay securely with cash when your package arrives.
+                    <div class="space-y-3 p-3 bg-stone-50 dark:bg-stone-800 rounded-2xl border border-stone-200 dark:border-stone-700">
+                        <div class="flex items-center space-x-2 text-xs font-bold text-amber-700 dark:text-amber-500">
+                            <i class="fa-solid fa-truck"></i>
+                            <span>Delivery Address & Contact Details</span>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">Street Address</label>
+                            <input type="text" id="input-cod-address" required placeholder="123 Brewer St, Apt 4B" class="w-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2 text-xs text-espressoText dark:text-white focus:outline-none">
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <div>
+                                <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">City</label>
+                                <input type="text" id="input-cod-city" required placeholder="Coimbatore" class="w-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2 text-xs text-espressoText dark:text-white focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">Postal Code (6 Digits)</label>
+                                <input type="text" id="input-cod-zip" maxlength="6" oninput="this.value = this.value.replace(/\\D/g, '')" required placeholder="641001" class="w-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2 text-xs text-espressoText dark:text-white focus:outline-none">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">Phone Number for Delivery</label>
+                            <input type="tel" id="input-cod-phone" maxlength="13" oninput="this.value = this.value.replace(/[^\\d+]/g, '')" required placeholder="+919876543210" class="w-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2 text-xs text-espressoText dark:text-white focus:outline-none">
+                        </div>
                     </div>
                 </div>
             </div>
 
             <div class="pt-4 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
-                <button onclick="closeTransactionModal()" class="px-5 py-2.5 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 font-bold text-xs uppercase transition-colors">Cancel</button>
-                <button onclick="validateAndConfirmPayment()" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wider shadow-lg transition-all flex items-center space-x-2">
+                <button onclick="closeTransactionModal()" class="px-5 py-2.5 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 font-bold text-xs uppercase transition-colors cursor-pointer">Cancel</button>
+                <button onclick="validateAndConfirmPayment()" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wider shadow-lg transition-all flex items-center space-x-2 cursor-pointer">
                     <i class="fa-solid fa-check"></i>
                     <span>Confirm Order</span>
                 </button>
@@ -832,9 +867,9 @@ function selectPaymentMethod(method) {
         const btn = document.getElementById(`pay-method-${m}`);
         if(btn) {
             if(m === method) {
-                btn.className = "p-3 rounded-2xl border-2 border-amber-600 bg-amber-50 dark:bg-amber-950/40 text-espressoText dark:text-white text-xs font-bold flex flex-col items-center space-y-1 transition-all";
+                btn.className = "p-3 rounded-2xl border-2 border-amber-600 bg-amber-50 dark:bg-amber-950/40 text-espressoText dark:text-white text-xs font-bold flex flex-col items-center space-y-1 transition-all cursor-pointer";
             } else {
-                btn.className = "p-3 rounded-2xl border-2 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-300 text-xs font-bold flex flex-col items-center space-y-1 transition-all";
+                btn.className = "p-3 rounded-2xl border-2 border-stone-200 dark:border-stone-700 text-stone-600 dark:text-stone-300 text-xs font-bold flex flex-col items-center space-y-1 transition-all cursor-pointer";
             }
         }
     });
@@ -843,9 +878,29 @@ function selectPaymentMethod(method) {
     if(fieldsContainer) {
         if(method === 'cod') {
             fieldsContainer.innerHTML = `
-                <div class="p-4 bg-stone-50 dark:bg-stone-800 rounded-2xl text-center text-xs text-stone-600 dark:text-stone-300 font-bold">
-                    <i class="fa-solid fa-box-open text-xl text-amber-600 mb-1 block"></i>
-                    Cash on Delivery selected. Pay securely with cash when your package arrives.
+                <div class="space-y-3 p-3 bg-stone-50 dark:bg-stone-800 rounded-2xl border border-stone-200 dark:border-stone-700">
+                    <div class="flex items-center space-x-2 text-xs font-bold text-amber-700 dark:text-amber-500">
+                        <i class="fa-solid fa-truck"></i>
+                        <span>Delivery Address & Contact Details</span>
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">Street Address</label>
+                        <input type="text" id="input-cod-address" required placeholder="123 Brewer St, Apt 4B" class="w-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2 text-xs text-espressoText dark:text-white focus:outline-none">
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <div>
+                            <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">City</label>
+                            <input type="text" id="input-cod-city" required placeholder="Coimbatore" class="w-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2 text-xs text-espressoText dark:text-white focus:outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">Postal Code (6 Digits)</label>
+                            <input type="text" id="input-cod-zip" maxlength="6" oninput="this.value = this.value.replace(/\\D/g, '')" required placeholder="641001" class="w-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2 text-xs text-espressoText dark:text-white focus:outline-none">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">Phone Number for Delivery</label>
+                        <input type="tel" id="input-cod-phone" maxlength="13" oninput="this.value = this.value.replace(/[^\\d+]/g, '')" required placeholder="+919876543210" class="w-full bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2 text-xs text-espressoText dark:text-white focus:outline-none">
+                    </div>
                 </div>
             `;
         } else if(method === 'card') {
@@ -878,7 +933,29 @@ function selectPaymentMethod(method) {
 }
 
 function validateAndConfirmPayment() {
-    if (selectedPaymentMethod === 'card') {
+    if (selectedPaymentMethod === 'cod') {
+        const address = document.getElementById('input-cod-address')?.value.trim();
+        const city = document.getElementById('input-cod-city')?.value.trim();
+        const zip = document.getElementById('input-cod-zip')?.value.trim();
+        const phone = document.getElementById('input-cod-phone')?.value.trim();
+
+        if (!address) {
+            showToast("Missing Street Address", "Please enter your street address.", "error");
+            return;
+        }
+        if (!city) {
+            showToast("Missing City", "Please enter your city.", "error");
+            return;
+        }
+        if (!zip || zip.length !== 6) {
+            showToast("Invalid Postal Code", "Postal code must be exactly 6 digits.", "error");
+            return;
+        }
+        if (!phone || phone.length < 10) {
+            showToast("Invalid Phone Number", "Please enter a valid phone number (at least 10 digits).", "error");
+            return;
+        }
+    } else if (selectedPaymentMethod === 'card') {
         const cardNum = document.getElementById('input-card-num')?.value.trim();
         const cardExp = document.getElementById('input-card-exp')?.value.trim();
         const cardCvv = document.getElementById('input-card-cvv')?.value.trim();
@@ -909,7 +986,7 @@ function validateAndConfirmPayment() {
         cart = [];
         updateCartUI();
         closeTransactionModal();
-        showToast("Payment Success!", "Your order has been placed successfully. Thank you!");
+        showToast("Payment Success!", "Your order has been placed successfully via Cash on Delivery!");
     }, 1800);
 }
 
@@ -984,7 +1061,7 @@ function openBlogModal(blogId) {
 
     modal.innerHTML = `
         <div class="bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 sm:p-10 space-y-6 relative">
-            <button onclick="closeBlogModal()" class="absolute top-6 ltr:right-6 rtl:left-6 p-2.5 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors">
+            <button onclick="closeBlogModal()" class="absolute top-6 ltr:right-6 rtl:left-6 p-2.5 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors cursor-pointer">
                 <i class="fa-solid fa-xmark text-sm"></i>
             </button>
             <div class="space-y-2">
@@ -1002,7 +1079,7 @@ function openBlogModal(blogId) {
                 ${paragraphsHtml}
             </div>
             <div class="pt-6 border-t border-stone-200 dark:border-stone-800 flex justify-end">
-                <button onclick="closeBlogModal()" class="px-8 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wider transition-colors">Close Guide</button>
+                <button onclick="closeBlogModal()" class="px-8 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wider transition-colors cursor-pointer">Close Guide</button>
             </div>
         </div>
     `;
@@ -1012,4 +1089,107 @@ function openBlogModal(blogId) {
 function closeBlogModal() {
     const modal = document.getElementById('blog-modal');
     if (modal) modal.remove();
+}
+
+function openPricingConfirmation(planName, price, type) {
+    let modal = document.getElementById('pricing-modal');
+    if (!modal) {
+        modal = document.createElement('div');
+        modal.id = 'pricing-modal';
+        modal.className = 'fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/70 backdrop-blur-sm';
+        document.body.appendChild(modal);
+    }
+
+    modal.innerHTML = `
+        <div class="bg-white dark:bg-stone-900 border border-stone-200 dark:border-stone-800 rounded-3xl max-w-md w-full shadow-2xl p-6 sm:p-8 space-y-6 relative">
+            <button onclick="closePricingModal()" class="absolute top-6 ltr:right-6 rtl:left-6 p-2 rounded-full bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-700 transition-colors cursor-pointer">
+                <i class="fa-solid fa-xmark text-sm"></i>
+            </button>
+            <div class="space-y-1">
+                <span class="text-xs font-bold text-amber-600 uppercase tracking-widest">Confirm Selection</span>
+                <h3 class="text-2xl font-bold text-espressoText dark:text-white">${planName}</h3>
+                <p class="text-stone-500 text-xs">Price: <span class="font-bold text-espressoText dark:text-white">$${price.toFixed(2)} ${type === 'subscription' ? '/ month' : 'one-time'}</span></p>
+            </div>
+
+            <form onsubmit="handlePlanConfirmation(event, '${planName}', ${price}, '${type}')" class="space-y-4">
+                <div>
+                    <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">Your Full Name</label>
+                    <input type="text" id="confirm-name" required placeholder="Master Brewer" class="w-full bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2.5 text-xs text-espressoText dark:text-white focus:outline-none">
+                </div>
+                <div>
+                    <label class="block text-[11px] font-bold text-stone-600 dark:text-stone-400 mb-1">Brewery / Email Address</label>
+                    <input type="email" id="confirm-email" required placeholder="brewer@crafttap.com" class="w-full bg-stone-50 dark:bg-stone-800 border border-stone-200 dark:border-stone-700 rounded-xl px-3 py-2.5 text-xs text-espressoText dark:text-white focus:outline-none">
+                </div>
+
+                <div class="pt-4 border-t border-stone-200 dark:border-stone-800 flex items-center justify-between">
+                    <button type="button" onclick="closePricingModal()" class="px-5 py-2.5 rounded-xl bg-stone-100 dark:bg-stone-800 text-stone-600 dark:text-stone-300 font-bold text-xs uppercase transition-colors cursor-pointer">Cancel</button>
+                    <button type="submit" class="px-6 py-3 rounded-xl bg-amber-600 hover:bg-amber-700 text-white font-bold text-xs uppercase tracking-wider shadow-lg transition-all flex items-center space-x-2 cursor-pointer">
+                        <i class="fa-solid fa-check"></i>
+                        <span>Confirm Plan</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    `;
+    modal.classList.remove('hidden');
+}
+
+function handlePlanConfirmation(event, planName, price, type) {
+    event.preventDefault();
+    const name = document.getElementById('confirm-name').value;
+    
+    closePricingModal();
+    showToast("Pack Confirmed!", `Thank you ${name}! Your request for ${planName} has been registered.`);
+    
+    if (type === 'subscription') {
+        setTimeout(() => switchTab('saas'), 1200);
+    } else {
+        setTimeout(() => switchTab('products'), 1200);
+    }
+}
+
+function closePricingModal() {
+    const modal = document.getElementById('pricing-modal');
+    if (modal) modal.remove();
+}
+
+function downloadDummyRecipePDF() {
+    const pdfContent = `
+THE ALCHEMIST'S TAP - OFFICIAL BREW DAY LOG SHEET
+=================================================
+Recipe Name: Pacific Northwest Double IPA Clone
+Target Original Gravity (OG): 1.082
+Target Final Gravity (FG): 1.015
+Target ABV: 8.2%
+IBU: 65 | SRM: 6
+
+BREW DAY CHECKLIST:
+[ ] Water Volume Prepared: 7.5 Gallons RO Water
+[ ] Mineral Adjustments: 5g Gypsum, 4g Calcium Chloride
+[ ] Mash Rest Temperature: 152°F for 60 minutes
+[ ] Boil Time: 60 Minutes
+[ ] Hop Additions: 
+    - 60 min: 1 oz Cascade
+    - 15 min: 2 oz Citra & Mosaic
+    - Whirlpool (180°F): 3 oz Cryo Citra
+[ ] Pitch Temperature: 66°F (WLP001 California Ale Yeast)
+
+NOTES:
+-----------------------------------------------------------------
+-----------------------------------------------------------------
+    `;
+
+    const blob = new Blob([pdfContent], { type: 'application/pdf' });
+    const url = window.URL.createObjectURL(blob);
+    
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Alchemists_Tap_Brew_Day_Log.pdf';
+    document.body.appendChild(a);
+    a.click();
+    
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+
+    showToast('Downloaded Successfully', 'Your dummy brew day recipe PDF log has been saved.');
 }

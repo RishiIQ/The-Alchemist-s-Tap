@@ -427,10 +427,10 @@ function injectHeaderAndFooter() {
                         <div>
     <h4 class="font-bold text-stone-800 dark:text-white mb-4 uppercase text-[11px] tracking-wider">Inventory</h4>
     <ul class="space-y-2.5 text-slate-800 dark:text-white/60">
-        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('kits'), 150);" class="hover:text-amber-400 transition-colors cursor-pointer">All-in-One Kits</button></li>
-        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('malts'), 150);" class="hover:text-amber-400 transition-colors cursor-pointer">Maris Otter Malts</button></li>
-        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('hops'), 150);" class="hover:text-amber-400 transition-colors cursor-pointer">Citra & Cascade Hops</button></li>
-        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('equipment'), 150);" class="hover:text-amber-400 transition-colors cursor-pointer">Liquid Yeast & Gear</button></li>
+        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('kits'), 200);" class="hover:text-amber-400 transition-colors cursor-pointer">All-in-One Kits</button></li>
+        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('malts'), 200);" class="hover:text-amber-400 transition-colors cursor-pointer">Maris Otter Malts</button></li>
+        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('hops'), 200);" class="hover:text-amber-400 transition-colors cursor-pointer">Citra & Cascade Hops</button></li>
+        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('equipment'), 200);" class="hover:text-amber-400 transition-colors cursor-pointer">Liquid Yeast & Gear</button></li>
     </ul>
 </div>
                         <div>

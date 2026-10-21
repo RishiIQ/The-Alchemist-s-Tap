@@ -425,14 +425,14 @@ function injectHeaderAndFooter() {
                             </ul>
                         </div>
                         <div>
-                            <h4 class="font-bold text-stone-800 dark:text-white mb-4 uppercase text-[11px] tracking-wider">Inventory</h4>
-                            <ul class="space-y-2.5 text-slate-800 dark:text-white/60">
-                                <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('kits'), 100);" class="hover:text-amber-400 transition-colors cursor-pointer">All-in-One Kits</button></li>
-                                <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('malts'), 100);" class="hover:text-amber-400 transition-colors cursor-pointer">Maris Otter Malts</button></li>
-                                <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('hops'), 100);" class="hover:text-amber-400 transition-colors cursor-pointer">Citra & Cascade Hops</button></li>
-                                <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('equipment'), 100);" class="hover:text-amber-400 transition-colors cursor-pointer">Liquid Yeast & Gear</button></li>
-                            </ul>
-                        </div>
+    <h4 class="font-bold text-stone-800 dark:text-white mb-4 uppercase text-[11px] tracking-wider">Inventory</h4>
+    <ul class="space-y-2.5 text-slate-800 dark:text-white/60">
+        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('kits'), 150);" class="hover:text-amber-400 transition-colors cursor-pointer">All-in-One Kits</button></li>
+        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('malts'), 150);" class="hover:text-amber-400 transition-colors cursor-pointer">Maris Otter Malts</button></li>
+        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('hops'), 150);" class="hover:text-amber-400 transition-colors cursor-pointer">Citra & Cascade Hops</button></li>
+        <li><button onclick="switchTab('products'); setTimeout(() => filterProducts('equipment'), 150);" class="hover:text-amber-400 transition-colors cursor-pointer">Liquid Yeast & Gear</button></li>
+    </ul>
+</div>
                         <div>
                             <h4 class="font-bold text-stone-800 dark:text-white mb-4 uppercase text-[11px] tracking-wider">Newsletter</h4>
                             <p class="text-[11px] text-slate-800 dark:text-white/60 mb-3">Get seasonal hop harvest alerts and weekly clone recipes.</p>
@@ -502,7 +502,7 @@ function setDirection(dir) {
     showToast("Layout Direction", `Switched to ${dir.toUpperCase()} layout.`);
 }
 
-async function switchTab(tabId) {
+async function switchTab(tabId, categoryFilter = null) {
     const viewContainer = document.getElementById('app-view-container');
     if(!viewContainer) return;
 
@@ -532,18 +532,13 @@ async function switchTab(tabId) {
         activeBtn.classList.add('text-amber-700', 'bg-amber-50', 'dark:bg-amber-950/50', 'dark:text-amber-400', 'border', 'border-amber-200', 'dark:border-amber-800');
     }
 
-    if ((tabId === 'home' || tabId === 'saas') && homeDropdownBtn) {
-        homeDropdownBtn.classList.remove('text-stone-600', 'dark:text-stone-300');
-        homeDropdownBtn.classList.add('text-amber-700', 'bg-amber-50', 'dark:bg-amber-950/50', 'dark:text-amber-400', 'border', 'border-amber-200', 'dark:border-amber-800');
-    }
-
     window.scrollTo({ top: 0, behavior: 'smooth' });
 
     if(tabId === 'home') {
         renderHomeFeatured();
         calculateABV();
     } else if(tabId === 'products') {
-        renderProducts('all');
+        renderProducts(categoryFilter || 'all');
     } else if(tabId === 'recipes') {
         renderBlog();
     }
